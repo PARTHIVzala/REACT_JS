@@ -55,10 +55,11 @@ const Calculator = () => {
                 <Button text="=" type="equal" onClick={calc} />
 
                 {/* Bottom */}
-                <Button text="√" type="func" onClick={squareRoot} />
+                <Button text="X" type="func" onClick={() => add("*")} />            </div>
             </div>
         </div>
     );
 };
 
 export default Calculator;
+
