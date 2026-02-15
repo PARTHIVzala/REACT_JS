@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ================= Banner ================= */
+
+.banner {
+    height: 380px;
+    background-image: url("https://wpbingo-jumys.myshopify.com/cdn/shop/files/bg-breadcrumb.jpg?v=1715585479");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Center content inside banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= Page Padding ================= */
+
+.active-contact {
+  color: red;
+}
+
+
+.contact-page {
+    padding: 60px 0;
+}
+
+/* ================= Heading ================= */
+
+.contact-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================= Breadcrumb ================= */
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.breadcrumb-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* ================= Contact Section Layout ================= */
+
+.contact-section {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* ================= Left Side ================= */
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.open-hours {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+/* ================= Right Side ================= */
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-right textarea {
+    border-radius: 20px;
+    resize: none;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: #e10914;
+}
+
+.contact-right button {
+    background: #e10914;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 173px;
+}
+
+.contact-right button:hover {
+    background: #c00710;
+}
+
+/* ================= Map ================= */
+
+.map-wrapper {
+    margin: 50px 0;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .contact-heading {
+        font-size: 28px;
+    }
+
+    .breadcrumb-list {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .map-wrapper iframe {
+        height: 300px;
+    }
+}
+
+.social-icons a:nth-child(1):hover { background:#1877f2; }
+.social-icons a:nth-child(2):hover { background:#1da1f2; }
+.social-icons a:nth-child(3):hover { background:#e1306c; }
+.social-icons a:nth-child(4):hover { background:#000; }
