@@ -4,8 +4,6 @@ function Contact() {
     return (
         <div className="contact-page">
 
-            <div className="container">
-
                 {/* ===== BANNER ===== */}
                 <div className="banner">
 
@@ -39,6 +37,8 @@ function Contact() {
 
 
                 {/* ===== CONTACT SECTION ===== */}
+            
+            <div className="container">
                 <div className="contact-section">
 
                     {/* LEFT SIDE */}
