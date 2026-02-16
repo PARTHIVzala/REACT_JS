@@ -144,6 +144,22 @@
     background: #c00710;
 }
 
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+    transform: scale(1.05);
+}
+
 /* ================= Map ================= */
 
 .map-wrapper {
