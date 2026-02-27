@@ -108,7 +108,7 @@ const Editproduct = () => {
           </Form.Label>
           <Col sm="10">
             <Form.Control
-              type="text"
+              type="textarea"
               name="Desc"
               value={formdata.Desc}
               onChange={handlechange}
