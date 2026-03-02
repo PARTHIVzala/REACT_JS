@@ -11,7 +11,6 @@ const Editproduct = () => {
     image: "",
     title: "",
     Desc: "",
-    Brand: "",
     price: "",
     Quantity: "",
     Category: "",
@@ -23,7 +22,6 @@ const Editproduct = () => {
     let newErrors = {};
 
     if (!formdata.title.trim()) newErrors.title = "Title is required";
-    if (!formdata.Brand.trim()) newErrors.Brand = "Brand is required";
     if (!formdata.Desc.trim()) newErrors.Desc = "Description is required";
     if (!formdata.price) newErrors.price = "Price is required";
     if (!formdata.image.trim()) newErrors.image = "Image URL is required";
@@ -83,25 +81,7 @@ const Editproduct = () => {
               {Errors.title}
             </Form.Control.Feedback>
           </Col>
-        </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
-            Brand
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              name="Brand"
-              value={formdata.Brand}
-              onChange={handlechange}
-              isInvalid={!!Errors.Brand}
-              placeholder="Enter the Brand"
-            />
-            <Form.Control.Feedback type="invalid">
-              {Errors.Brand}
-            </Form.Control.Feedback>
-          </Col>
-        </Form.Group>
+        
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
             Descrption
